@@ -1,0 +1,25 @@
+/* =============
+   Hero
+============= */
+
+.Hero{
+
+.hero-content{
+
+@include md {
+display: grid;
+grid-template-columns: 40% 60%;
+}
+@include .large-images{
+grid-template-columns: 50% 50%;
+}
+
+.hero-content-left.container{
+
+
+   @include lg {
+      grid-template-columns: auto auto 16px
+   }
+}
+}
+}

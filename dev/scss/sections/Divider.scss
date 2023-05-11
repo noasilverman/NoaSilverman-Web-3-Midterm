@@ -1,0 +1,60 @@
+/* =============
+  Divider
+============= */
+
+.divider{
+
+@include md {
+display:grid;
+grid-template-columns: 15px 1fr 1fr 15px;
+grid-template-areas: ". box-1 box-2 .";
+}
+@include xl{
+grid-template-columns: auto 570px 570px auto;
+}
+
+.hero-content-left.container{
+
+}
+   @include xxl{
+      grid-template-columns: auto 660px 660px auto;
+}
+
+.container {
+@include xl{
+   grid-template-columns: 16px auto 16px;
+}
+
+&.box-1{
+   @include md {
+      grid-area: box-1;
+   }
+   
+
+&.box-2{
+@include md {
+   grid-area: box-1;
+}
+
+.content{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-areas:
+    "h2 img"
+   "a img"
+   ;
+
+   h2{
+    grid-template-columns: h2;
+   }
+
+   a{
+   grid-area: a;  
+   }
+
+   img{
+      grid-area: img;
+}
+}
+}
+}

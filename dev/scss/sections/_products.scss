@@ -1,0 +1,45 @@
+/* =============
+   Products
+============= */
+
+.Glossier-Products{
+
+ul{
+
+@include md{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+@include xl{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+}
+}
+}
+
+.Glossier-Products{
+
+   @include md{
+      display: grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas: 
+      ". products ."
+      ;
+      }
+      @include xl{
+         grid-template-columns: auto 1140px auto;
+      }
+
+      @include xxl{
+grid-template-columns: auto 1320px auto;
+      }
+
+      ul.products-grid{
+
+         @include md{
+            grid-area: products:
+      }
+      }
+   }
+

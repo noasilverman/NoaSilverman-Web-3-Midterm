@@ -1,0 +1,16 @@
+/* =============
+  imgdivider
+============= */
+
+.imgdivider{
+
+   ul{
+
+
+@include xxl {
+display:grid;
+grid-template-columns: 1fr;
+grid-template-areas: "imgdivider";
+}
+}
+}
