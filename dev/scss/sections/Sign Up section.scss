@@ -1,0 +1,29 @@
+/* =============
+    SignUp
+============= */
+
+.SignUp{
+
+&.content{
+@include md{
+display:grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: 
+"Subscribe-for-more-information Find-out-more?";
+}
+@include xl{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "Subscribe-for-more-information Find-out-more?";
+}
+}
+}
+
+.Subscribe-for-more-information{
+grid-area: Subscribe for more information;
+}
+
+.Find-out-more{
+grid-area: Find out more?; 
+}

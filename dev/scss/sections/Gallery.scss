@@ -1,0 +1,14 @@
+/* =============
+Gallery
+============= */
+
+.gallery{
+
+ ul{
+@include xl{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+ }   
+}

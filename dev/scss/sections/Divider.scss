@@ -45,10 +45,15 @@ grid-template-columns: auto 570px 570px auto;
    ;
 
    h2{
-    grid-area: h2;
+    grid-template-columns: h2;
    }
+
+   a{
    grid-area: a;  
    }
+
+   img{
+      grid-area: img;
 }
 }
 }
