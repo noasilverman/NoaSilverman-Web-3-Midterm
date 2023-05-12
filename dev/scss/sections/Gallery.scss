@@ -5,10 +5,45 @@ Gallery
 .gallery{
 
  ul{
-@include xl{
-    display:grid;
-    grid-template-columns: 1fr;
-}
+ 
+list-style: none;
+padding: 0;
 
- }   
+@include md{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+@include lg{
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding: 15px 15px 15px;
+}
+@include xl {
+    grid-template-areas: "g1 g2
+    g1 g3";
+    padding: 20px 15px 20px;
+}
+}
+li{
+    &.img-1{
+        @include xl{
+            grid-area: "g1";
+        }
+    }
+    &.img-2{
+        @include xl{
+            grid-area: "g2";
+        }
+    }
+    &.img-3{
+        display: none;
+        @include md{
+        }
+        @include lg{
+        }
+        @include xl{
+            grid-area: "g3";
+            display: block;
+        }
+    }
 }

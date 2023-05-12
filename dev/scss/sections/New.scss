@@ -1,0 +1,72 @@
+/* =============
+  new
+============= */
+
+.new{
+ .new-articles{
+   @include md{
+      display: grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas: ". articles .";
+      padding: 15px 15px 15px
+   }
+   @include lg{
+      padding: 15px 15px 15px 15px;
+   }
+   @include xl{
+      grid-template-columns: auto 1140px auto;
+      padding: 223px 15px 15px 223px;
+   }
+   ul.articles-grid{
+      list-style: none;
+   }
+   @include md{
+      grid-area: "articles";
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-areas: 
+      "a1 a1 a2 a2"
+      "a3 a3 a4 a4"
+      ". a5 a5 .";
+   }
+   @include lg{
+      grid-template-columns: repeat(4,1fr);
+      grid-template-areas: "a1 a1 a2 a2 a3 a3"
+      ". a4 a4 a5 a5 .";
+   }
+   li{
+      .container{
+         @include xl{
+            grid-template-columns: 15px auto 15px;
+         }
+      }
+      &.article-1{
+         background-color: white;
+         @include md{
+            grid-area: "a1";
+         }
+      }
+      &.article-2{
+         background-color: white;
+         @include md{
+            grid-area: "a2";
+         }
+      }&.article-3{
+         background-color: white;
+         @include md{
+            grid-area: "a3";
+         }
+      }&.article-4{
+         background-color: white;
+         @include md{
+            grid-area: "a4";
+         }
+      }&.article-5{
+         background-color: white;
+         @include md{
+            grid-area: "a5";
+         }
+      }
+   }
+ }  
+}

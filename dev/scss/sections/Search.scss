@@ -1,0 +1,50 @@
+/* =============
+   Search
+============= */
+
+.search{
+   margin: 25px 25px;
+
+   .content{
+form{
+display: flex;
+
+input{
+   color: ;
+   font-size: ;
+   width: ;
+
+   border: none;
+   border-bottom: 1px solid $;
+
+   @include md{
+      font-size: ;
+   }
+
+   @include lg{
+      font-size: ;
+   }
+}
+
+   ::placeholder{
+     color: $; 
+   }
+
+   button{
+      background-color: ;
+   border: ;
+   border-radius: ;
+   margin-left: ;
+   padding: ;
+
+   @include md{
+      padding: ;
+   }
+
+   img{
+    width: 30px;  
+   }
+}
+}
+   }
+}
