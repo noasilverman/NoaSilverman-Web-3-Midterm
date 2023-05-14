@@ -1,3 +1,21 @@
 /* =============
     Header
 ============= */
+.container{
+    display:grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". content .";
+    background-color: pink;
+}
+
+.header-content{
+    grid-area: content;
+    text-align: center;
+
+
+@include md{
+    padding: 15px;
+    text-align: center;
+}
+}
+

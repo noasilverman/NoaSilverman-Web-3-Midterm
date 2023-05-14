@@ -15,6 +15,7 @@ grid-template-areas:
 ;
 }
 
+.container{
 @include xl{
     grid-template-columns: auto 1140px auto;
 }
@@ -22,7 +23,7 @@ grid-template-areas:
 @include xxl{
 grid-template-columns: auto 1320px auto;
 }
-
+}
 
 .content{
   grid-area:content;  

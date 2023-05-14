@@ -19,11 +19,13 @@ padding: 0;
     padding: 15px 15px 15px;
 }
 @include xl {
-    grid-template-areas: "g1 g2
-    g1 g3";
+    grid-template-areas: "g1 g2"
+    "g1 g3";
     padding: 20px 15px 20px;
 }
 }
+}
+
 li{
     &.img-1{
         @include xl{

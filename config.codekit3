@@ -456,7 +456,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/Gallery.scss" : {
+    "\/dev\/scss\/sections\/_gallery.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -465,13 +465,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/Gallery.css",
+      "oAP" : "\/dev\/scss\/sections\/_gallery.css",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/Glossier You Perfume.scss" : {
+    "\/dev\/scss\/sections\/_glossier.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -480,13 +480,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/Glossier You Perfume.css",
+      "oAP" : "\/dev\/scss\/sections\/_glossier.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/Hero.scss" : {
+    "\/dev\/scss\/sections\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -495,13 +495,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/Hero.css",
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/New.scss" : {
+    "\/dev\/scss\/sections\/_new.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -509,14 +509,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/New.css",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_new.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/rerouts.scss" : {
+    "\/dev\/scss\/sections\/_rerouts.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -524,14 +524,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/rerouts.css",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_rerouts.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/Search.scss" : {
+    "\/dev\/scss\/sections\/_search.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -539,9 +539,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/Search.css",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_search.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

@@ -1,0 +1,59 @@
+/* =============
+   rerouts
+============= */
+
+.rerouts{
+&.content{
+    @include md{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    grid-template-areas: "makeup-shelf Subscribe";
+    }
+    @include xl{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "makeup-shelf Subscribe";
+    }
+}
+}
+.padding{
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-bottom: 64px;
+    padding-right: 169;
+
+    @include md{
+        padding-left: 21px;
+        padding-top: 32px;
+        padding-bottom: 68px;
+        padding-right: 160px;
+    }
+@include lg{
+    padding-left: 17px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    padding-right: 276px;
+}
+}
+
+.makeup-shelf{
+    display: grid;
+    grid-area: y;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: text circle;
+}
+
+.text{
+    grid-area: text;
+}
+.image{
+  grid-area: circle;  
+}
+.button{
+    grid-area: button;
+    background-color: pink;
+    color: white;
+    text-decoration: none;
+}
+
+

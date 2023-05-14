@@ -10,35 +10,33 @@ form{
 display: flex;
 
 input{
-   color: ;
-   font-size: ;
-   width: ;
-
+   color: transparent;
+   font-size: 14px;
    border: none;
-   border-bottom: 1px solid $;
+   border-bottom: 1px solid white;
 
    @include md{
-      font-size: ;
+      font-size: 30px;
    }
 
    @include lg{
-      font-size: ;
+      font-size: 35px;
    }
 }
 
    ::placeholder{
-     color: $; 
+     color: black; 
    }
 
    button{
-      background-color: ;
-   border: ;
-   border-radius: ;
-   margin-left: ;
-   padding: ;
+      background-color: pink;
+   border: 1px;
+   border-radius: 3.5px;
+   margin-left: 259px;
+   padding: 16px;
 
    @include md{
-      padding: ;
+      padding: 24px;
    }
 
    img{

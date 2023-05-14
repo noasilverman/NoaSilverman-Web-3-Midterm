@@ -4,24 +4,35 @@
 
 footer{
 
-.content{
+&.content{
 
     @include md{
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "locations"
-        "locations follow"
+        "contact email socials"
         ;
 }
-@include lg{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "locations newsletter follow";
-}
-.locations{
-   @include md{
-    grid-area: locations;
-   }
+@include xl{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "contact both";
 }
 }
+}
+
+.contact{
+grid-area: contact;
+}
+
+.email{
+grid-area: email;
+}
+
+.socials{
+grid-area: socials;
+}
+
+.both{
+    grid-area: both;
 }

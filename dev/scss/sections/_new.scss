@@ -70,3 +70,27 @@
    }
  }  
 }
+ul{
+   padding-left: 0px;
+   @include sm{
+      display: grid;
+      grid-template-columns: lfr;
+      gap: 37px;
+   }
+   @include md{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 37px;
+   }
+   @include xl{
+      display: grid;
+      grid-template-columns: 1fr fr 1fr;
+      gap: 37px
+   }
+   li{
+      padding-left: 0px;
+      list-style: none;
+      border: 1px solid;
+      border-radius: 2px;
+   }
+}

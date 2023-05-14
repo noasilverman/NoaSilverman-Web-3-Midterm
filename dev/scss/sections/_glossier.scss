@@ -1,8 +1,8 @@
 /* =============
-  Glossier-You-Perfume
+  Glossier
 ============= */
 
-.glossier-you-perfume{
+.glossier{
 
     &.content{
         @include md{
@@ -17,7 +17,7 @@
  }
 }
  }
-.glossier-you-perfume{
+.glossier{
     text-decoration: none;
     display: grid;
     grid-area: Glossier You Perfume;
@@ -29,9 +29,8 @@
 
 .price{
     display:grid;
-    grid-area: price;
+    grid-area: Price;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "flower power"
     background-color: blue;
     color: black;
 }

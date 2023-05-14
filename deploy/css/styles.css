@@ -331,6 +331,7 @@ template {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
 }
+
 @media (min-width: 1200px) {
   .container {
     grid-template-columns: auto 1140px auto;
@@ -341,8 +342,13 @@ template {
     grid-template-columns: auto 1320px auto;
   }
 }
-.container .content {
+
+.content {
   grid-area: content;
+}
+
+.content-spacing {
+  padding-top: 30px;
 }
 
 /* =============
@@ -375,63 +381,301 @@ textarea {
 /* =============
     Header
 ============= */
+.container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+  background-color: pink;
+}
+
+.header-content {
+  grid-area: content;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header-content {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
 /* =============
     Footer
 ============= */
 @media (min-width: 768px) {
-  footer .content {
+  footer.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contact email socials";
+  }
+}
+@media (min-width: 1200px) {
+  footer.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "contact both";
+  }
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.email {
+  grid-area: email;
+}
+
+.socials {
+  grid-area: socials;
+}
+
+.both {
+  grid-area: both;
+}
+
+/* =============
+Gallery
+============= */
+.gallery ul {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .gallery ul {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "locations" "locations follow";
   }
 }
 @media (min-width: 992px) {
-  footer .content {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "locations newsletter follow";
+  .gallery ul {
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding: 15px 15px 15px;
   }
 }
-@media (min-width: 768px) {
-  footer .content .locations {
-    grid-area: locations;
+@media (min-width: 1200px) {
+  .gallery ul {
+    grid-template-areas: "g1 g2" "g1 g3";
+    padding: 20px 15px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  li.img-1 {
+    grid-area: "g1";
+  }
+}
+@media (min-width: 1200px) {
+  li.img-2 {
+    grid-area: "g2";
+  }
+}
+li.img-3 {
+  display: none;
+}
+@media (min-width: 1200px) {
+  li.img-3 {
+    grid-area: "g3";
+    display: block;
   }
 }
 
 /* =============
-   Products
+  Glossier
 ============= */
 @media (min-width: 768px) {
-  .Glossier-Products ul {
+  .glossier.content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "glossier-you-perfume price";
   }
 }
 @media (min-width: 1200px) {
-  .Glossier-Products ul {
+  .glossier.content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "glossier-you-perfume price";
   }
 }
 
+.glossier {
+  text-decoration: none;
+  display: grid;
+  grid-area: Glossier You Perfume;
+  grid-template-columns: 1fr 1fr;
+  background-color: blue;
+  color: black;
+}
+
+.price {
+  display: grid;
+  grid-area: Price;
+  grid-template-columns: 1fr 1fr;
+  background-color: blue;
+  color: black;
+}
+
+.words {
+  grid-area: flower;
+}
+
+.arrow {
+  grid-area: power;
+}
+
+.padding-words {
+  padding-left: 18px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
 @media (min-width: 768px) {
-  .Glossier-Products {
+  .padding-words {
+    padding-left: 22px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
+}
+@media (min-width: 992px) {
+  .padding-words {
+    padding-left: 18px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
+
+.padding-arrow {
+  padding-right: 16px;
+  padding-top: 33px;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .padding-arrow {
+    padding-top: 35px;
+    padding-bottom: 31px;
+    padding-right: 15px;
+  }
+}
+/* =============
+   Hero
+============= */
+@media (min-width: 768px) {
+  .Hero .hero-content {
     display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". products .";
+    grid-template-columns: 40% 60%;
+  }
+}
+.Hero .hero-content .large-images {
+  grid-template-columns: 50% 50%;
+}
+@media (min-width: 992px) {
+  .Hero .hero-content .hero-content-left.container {
+    grid-template-columns: auto auto 16px;
+  }
+}
+
+/* =============
+   rerouts
+============= */
+@media (min-width: 768px) {
+  .rerouts.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "makeup-shelf Subscribe";
   }
 }
 @media (min-width: 1200px) {
-  .Glossier-Products {
-    grid-template-columns: auto 1140px auto;
+  .rerouts.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "makeup-shelf Subscribe";
   }
 }
-@media (min-width: 1400px) {
-  .Glossier-Products {
-    grid-template-columns: auto 1320px auto;
-  }
+
+.padding {
+  padding-left: 16px;
+  padding-top: 14px;
+  padding-bottom: 64px;
+  padding-right: 169;
 }
 @media (min-width: 768px) {
-  .Glossier-Products ul.products-grid {
-    grid-area: products;
+  .padding {
+    padding-left: 21px;
+    padding-top: 32px;
+    padding-bottom: 68px;
+    padding-right: 160px;
   }
+}
+@media (min-width: 992px) {
+  .padding {
+    padding-left: 17px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    padding-right: 276px;
+  }
+}
+
+.makeup-shelf {
+  display: grid;
+  grid-area: y;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: text circle;
+}
+
+.text {
+  grid-area: text;
+}
+
+.image {
+  grid-area: circle;
+}
+
+.button {
+  grid-area: button;
+  background-color: pink;
+  color: white;
+  text-decoration: none;
+}
+
+/* =============
+   Search
+============= */
+.search {
+  margin: 25px 25px;
+}
+.search .content form {
+  display: flex;
+}
+.search .content form input {
+  color: transparent;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+@media (min-width: 768px) {
+  .search .content form input {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .search .content form input {
+    font-size: 35px;
+  }
+}
+.search .content form ::placeholder {
+  color: black;
+}
+.search .content form button {
+  background-color: pink;
+  border: 1px;
+  border-radius: 3.5px;
+  margin-left: 259px;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .search .content form button {
+    padding: 24px;
+  }
+}
+.search .content form button img {
+  width: 30px;
 }
