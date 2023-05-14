@@ -1,30 +1,78 @@
 /* =============
-    OurInventorySearch
+  Glossier-You-Perfume
 ============= */
 
-.signup{
+.glossier-you-perfume{
 
-&.content{
+    &.content{
+        @include md{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "glossier-you-perfume price";
+        }
+ @include xl{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "glossier-you-perfume price";
+ }
+}
+ }
+.glossier-you-perfume{
+    text-decoration: none;
+    display: grid;
+    grid-area: Glossier You Perfume;
+    grid-template-columns: 1fr 1fr;
+    background-color:blue;
+    color: black;
+  
+}
+
+.price{
+    display:grid;
+    grid-area: price;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "flower power"
+    background-color: blue;
+    color: black;
+}
+
+.words{
+grid-area: flower;
+}
+
+.arrow{
+grid-area: power;  
+}
+
+.padding-words{
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+
+
 @include md{
-display:grid;
-grid-template-columns: 1fr 1fr;
-grid-template-areas: 
-"Subscribe-for-more-information Find-out-more?";
+    padding-left: 22px;
+    padding-top: 20px;
+    padding-bottom: 19px;
 }
-@include xl{
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-areas: 
-"Subscribe-for-more-information Find-out-more?";
 
-}
+@include lg{
+    padding-left: 18px;
+    padding-top: 16px;
+    padding-bottom: 12px;
 }
 }
 
-.signup{
-    grid-area: Subscribe-for-more-information;
-     }
-    
-     .find-out-more{
-        grid-area: Find-out-more;
+.padding-arrow{
+    padding-right: 16px;
+    padding-top: 33px;
+    padding-bottom: 25px;
+
+    @include md{
+        padding-top: 35px;
+        padding-bottom: 31px;
+        padding-right: 15px;
+    }
+    @include lg{ 
+    }
 }
