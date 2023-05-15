@@ -2,7 +2,21 @@
    rerouts
 ============= */
 
-.rerouts{
+.divider{
+    &.content{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        grid-template-areas: "makeup-shelf Subscribe";
+        }
+        @include xl{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "makeup-shelf Subscribe";
+        }
+    }
+    }
+.rerout{
 &.content{
     @include md{
         display: grid;

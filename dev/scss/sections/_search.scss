@@ -2,47 +2,62 @@
    Search
 ============= */
 
-.search{
-   margin: 25px 25px;
+   .search{
 
-   .content{
-form{
-display: flex;
+      margin: 25px 0px;
 
-input{
-   color: transparent;
-   font-size: 14px;
-   border: none;
-   border-bottom: 1px solid white;
+      .content{
+         
+         form{
+            
+            display: flex;
 
-   @include md{
-      font-size: 30px;
+            input{
+               color: grey;
+               font-size: 14px;
+               width: 100%;
+               border: none;
+               border-bottom: 1px solid white;
+               
+
+               @include md{
+                  font-size: 30px;
+               }
+
+               @include lg{
+                  font-size: 35px;
+               }
+            }
+
+            ::placeholder{
+               color: black; 
+               opacity: 1;
+            }
+
+            ::-ms-input-placeholder{
+               color: $grey;
+
+            }
+
+            button{
+               background-color: pink;
+               border: none;
+               border-radius: 5px;
+               margin-left: 10px;
+               padding: 7.5px 12.5px 7.5px 12.5px;
+
+               @include md{
+                  padding: 16px 15px 16px 15px;
+               }
+
+               img{
+                  width: 25px;  
+
+                  @include md{
+                     width: 30px;
+                  }
+               }
+            }
+         }
+      }
    }
-
-   @include lg{
-      font-size: 35px;
-   }
-}
-
-   ::placeholder{
-     color: black; 
-   }
-
-   button{
-      background-color: pink;
-   border: 1px;
-   border-radius: 3.5px;
-   margin-left: 259px;
-   padding: 16px;
-
-   @include md{
-      padding: 24px;
-   }
-
-   img{
-    width: 30px;  
-   }
-}
-}
-   }
-}

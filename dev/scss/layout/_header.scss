@@ -1,6 +1,65 @@
 /* =============
     Header
 ============= */
+
+header{
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:15px 0px
+
+
+    }
+}
+
+
+header{
+    background-color: $pink;
+    color: white;
+
+    .content{
+
+        div{
+            margin: 20px 0 20px 0px;
+            @include md{
+                margin:25px 0 25px 0px;
+            }
+        }
+
+        img{
+            width: 40px;
+            padding-right:0.5ren;
+            
+            @include lg{
+                width: 60px;
+                padding-right: 1ren;
+            }
+        }
+
+        h1{
+            display: none;
+            color: $black;
+
+            @include md{
+                display: inline-block;
+                font-size: 24px;
+            }
+
+            @include lg{
+                font-size: 36px;
+            }
+        }
+    }
+        
+         
+        
+    
+
+
+
+}
+
 .container{
     display:grid;
     grid-template-columns: 16px auto 16px;
