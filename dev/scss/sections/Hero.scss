@@ -2,10 +2,11 @@
    Hero
 ============= */
 
-.Hero{
+.Hero {
 
-.hero-content{
+   .hero-content {
 
+<<<<<<< Updated upstream:dev/scss/sections/Hero.scss
 @include md {
 display: grid;
 grid-template-columns: 40% 60%;
@@ -13,13 +14,23 @@ grid-template-columns: 40% 60%;
 @include .large-images{
 grid-template-columns: 50% 50%;
 }
+=======
+      @include md {
+         display: grid;
+         grid-template-columns: 40% 60%;
+      }
+>>>>>>> Stashed changes:dev/scss/sections/_hero.scss
 
-.hero-content-left.container{
+      .large-images {
+         grid-template-columns: 50% 50%;
+      }
+
+      .hero-content-left.container {
 
 
-   @include lg {
-      grid-template-columns: auto auto 16px
+         @include lg {
+            grid-template-columns: auto auto 16px
+         }
+      }
    }
-}
-}
 }

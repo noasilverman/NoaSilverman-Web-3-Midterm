@@ -1,0 +1,77 @@
+/* =============
+  Glossier
+============= */
+
+.glossier {
+
+    &.content {
+        @include md {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "glossier-you-perfume price";
+        }
+
+        @include xl {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "glossier-you-perfume price";
+        }
+    }
+}
+
+.glossier {
+    text-decoration: none;
+    background-color: $blue;
+    color: black;
+
+}
+
+.price {
+    display: grid;
+    grid-area: Price;
+    grid-template-columns: 1fr 1fr;
+    background-color: $blue;
+    color: black;
+}
+
+.words {
+    grid-area: flower;
+}
+
+.arrow {
+    position: absolute;
+    right: 18px;
+}
+
+.padding-words {
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    position: relative;
+
+    @include md {
+        padding-left: 22px;
+        padding-top: 20px;
+        padding-bottom: 19px;
+    }
+
+    @include lg {
+        padding-left: 18px;
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
+}
+
+.padding-arrow {
+    padding-right: 16px;
+    padding-top: 33px;
+    padding-bottom: 25px;
+
+    @include md {
+        padding-top: 35px;
+        padding-bottom: 31px;
+        padding-right: 15px;
+    }
+
+    @include lg {}
+}
