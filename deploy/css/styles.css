@@ -429,12 +429,15 @@ header .content h1 {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
-  background-color: pink;
+}
+
+.pink-background {
+  background: #F2DFF0;
 }
 
 .header-content {
   grid-area: content;
-  text-align: center;
+  margin: 10px;
 }
 @media (min-width: 768px) {
   .header-content {
@@ -446,6 +449,10 @@ header .content h1 {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #F2DFF0;
+  padding: 15px;
+}
 @media (min-width: 768px) {
   footer.content {
     display: grid;
@@ -459,6 +466,14 @@ header .content h1 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "contact both";
   }
+}
+
+.specific-location {
+  border-bottom: 1px solid grey;
+}
+
+.social-left-padding {
+  padding-left: 35px;
 }
 
 .contact {
@@ -475,6 +490,36 @@ header .content h1 {
 
 .both {
   grid-area: both;
+}
+
+.email-signup {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input:focus {
+  border-color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+input::-moz-placeholder {
+  color: white;
+}
+
+input::-ms-placeholder {
+  color: white;
 }
 
 /* =============
@@ -544,10 +589,7 @@ li.img-3 {
 
 .glossier {
   text-decoration: none;
-  display: grid;
-  grid-area: Glossier You Perfume;
-  grid-template-columns: 1fr 1fr;
-  background-color: blue;
+  background-color: #A8DADC;
   color: black;
 }
 
@@ -555,7 +597,7 @@ li.img-3 {
   display: grid;
   grid-area: Price;
   grid-template-columns: 1fr 1fr;
-  background-color: blue;
+  background-color: #A8DADC;
   color: black;
 }
 
@@ -564,13 +606,15 @@ li.img-3 {
 }
 
 .arrow {
-  grid-area: power;
+  position: absolute;
+  right: 18px;
 }
 
 .padding-words {
   padding-left: 18px;
   padding-top: 12px;
   padding-bottom: 14px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .padding-words {
@@ -620,6 +664,25 @@ li.img-3 {
 /* =============
    rerouts
 ============= */
+.nav-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  background-color: rgb(255, 246, 251);
+}
+
+.learn-more-button {
+  background-color: #F2DFF0;
+  padding: 5px;
+}
+
+.nav-section-image {
+  width: 50px;
+  height: 50px;
+  padding: 30px;
+}
+
 @media (min-width: 768px) {
   .divider.content {
     display: grid;
@@ -690,7 +753,7 @@ li.img-3 {
 
 .button {
   grid-area: button;
-  background-color: pink;
+  background-color: #F2DFF0;
   color: white;
   text-decoration: none;
 }
@@ -705,11 +768,11 @@ li.img-3 {
   display: flex;
 }
 .search .content form input {
-  color: grey;
+  color: rgb(161, 161, 161);
   font-size: 14px;
   width: 100%;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(130, 128, 128);
 }
 @media (min-width: 768px) {
   .search .content form input {
@@ -729,7 +792,7 @@ li.img-3 {
   color: #93A8AC;
 }
 .search .content form button {
-  background-color: pink;
+  background-color: #F2DFF0;
   border: none;
   border-radius: 5px;
   margin-left: 10px;
@@ -747,4 +810,57 @@ li.img-3 {
   .search .content form button img {
     width: 30px;
   }
+}
+
+/* =============
+  new
+============= */
+.glossier-products-header {
+  margin: 10px;
+  color: grey;
+}
+
+.articles-grid {
+  display: grid;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 320px);
+    gap: 2%;
+    padding-bottom: 55px;
+  }
+}
+@media (min-width: 992px) {
+  .articles-grid {
+    grid-template-columns: repeat(3, 320px);
+    gap: 2%;
+    padding-bottom: 55px;
+  }
+}
+
+.article-image {
+  background-color: grey;
+}
+
+.article {
+  background-color: rgb(243, 243, 243);
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  max-width: 320px;
+}
+
+.article div {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.read-more-button {
+  padding: 5px;
+  background-color: #A8DADC;
+}
+.read-more-button a {
+  color: black;
+  text-decoration: none;
 }

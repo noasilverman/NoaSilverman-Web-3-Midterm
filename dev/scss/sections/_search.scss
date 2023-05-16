@@ -13,11 +13,11 @@
             display: flex;
 
             input{
-               color: grey;
+               color: rgb(161, 161, 161);
                font-size: 14px;
                width: 100%;
                border: none;
-               border-bottom: 1px solid white;
+               border-bottom: 1px solid rgb(130, 128, 128);
                
 
                @include md{
@@ -40,7 +40,7 @@
             }
 
             button{
-               background-color: pink;
+               background-color: $pink;
                border: none;
                border-radius: 5px;
                margin-left: 10px;

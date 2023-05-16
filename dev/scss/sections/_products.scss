@@ -1,0 +1,48 @@
+/* =============
+  new
+============= */
+.glossier-products-header {
+   margin: 10px;
+   color: grey;
+}
+.articles-grid{
+   display: grid;
+   justify-content: center;
+  
+
+   @include md{
+      grid-template-columns: repeat(2, 320px);
+      gap: 2%;
+      padding-bottom: 55px;
+   }
+   @include lg{
+      grid-template-columns: repeat(3, 320px);
+      gap: 2%;
+      padding-bottom: 55px;
+   }
+}
+.article-image{
+   background-color: grey;
+}
+.article {
+   background-color: rgb(243, 243, 243);
+   border-bottom: 1px solid grey;
+   margin-bottom: 10px;
+   max-width: 320px;
+}
+
+.article div {
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px;
+}
+
+.read-more-button {
+   padding: 5px;
+   background-color: $blue;
+
+   a {
+      color: black;
+      text-decoration: none;
+   }
+}

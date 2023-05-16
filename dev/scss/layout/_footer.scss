@@ -2,37 +2,74 @@
     Footer
 ============= */
 
-footer{
+footer {
+    background-color: $pink;
+    padding: 15px;
 
-&.content{
+    &.content {
 
-    @include md{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "contact email socials"
-        ;
-}
-@include xl{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "contact both";
-}
-}
-}
+        @include md {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "contact email socials"
+            ;
+        }
 
-.contact{
-grid-area: contact;
-}
-
-.email{
-grid-area: email;
+        @include xl {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "contact both";
+        }
+    }
 }
 
-.socials{
-grid-area: socials;
+.specific-location {
+    border-bottom: 1px solid grey;
 }
 
-.both{
+.social-left-padding {
+    padding-left: 35px;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.email {
+    grid-area: email;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.both {
     grid-area: both;
+}
+.email-signup{
+background-color: grey;
+    color: white;
+    border: none; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+input:focus{
+    border-color: white;
+}
+input::placeholder{
+    color:white;
+}
+input::-webkit-input-placeholder {
+    color:white;
+}
+
+input::-moz-placeholder {
+    color:white;
+}
+
+input::-ms-placeholder {
+    color:white;
 }

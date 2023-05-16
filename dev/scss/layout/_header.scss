@@ -64,12 +64,15 @@ header{
     display:grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". content .";
-    background-color: pink;
+
+}
+.pink-background{
+    background: $pink;
 }
 
 .header-content{
     grid-area: content;
-    text-align: center;
+    margin: 10px;
 
 
 @include md{

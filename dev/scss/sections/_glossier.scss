@@ -19,10 +19,7 @@
  }
 .glossier{
     text-decoration: none;
-    display: grid;
-    grid-area: Glossier You Perfume;
-    grid-template-columns: 1fr 1fr;
-    background-color:blue;
+    background-color:$blue;
     color: black;
   
 }
@@ -31,7 +28,7 @@
     display:grid;
     grid-area: Price;
     grid-template-columns: 1fr 1fr;
-    background-color: blue;
+    background-color:$blue;
     color: black;
 }
 
@@ -40,14 +37,15 @@ grid-area: flower;
 }
 
 .arrow{
-grid-area: power;  
+    position: absolute;
+    right: 18px;
 }
 
 .padding-words{
     padding-left: 18px;
     padding-top: 12px;
     padding-bottom: 14px;
-
+    position: relative;
 
 @include md{
     padding-left: 22px;
