@@ -2,62 +2,62 @@
    Search
 ============= */
 
-   .search{
+.search {
 
-      margin: 25px 0px;
+   margin: 25px 0px;
 
-      .content{
-         
-         form{
-            
-            display: flex;
+   .content {
 
-            input{
-               color: rgb(161, 161, 161);
-               font-size: 14px;
-               width: 100%;
-               border: none;
-               border-bottom: 1px solid rgb(130, 128, 128);
-               
+      form {
 
-               @include md{
-                  font-size: 30px;
-               }
+         display: flex;
 
-               @include lg{
-                  font-size: 35px;
-               }
+         input {
+            color: rgb(161, 161, 161);
+            font-size: 14px;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid rgb(130, 128, 128);
+
+
+            @include md {
+               font-size: 30px;
             }
 
-            ::placeholder{
-               color: black; 
-               opacity: 1;
+            @include lg {
+               font-size: 35px;
+            }
+         }
+
+         ::placeholder {
+            color: black;
+            opacity: 1;
+         }
+
+         ::-ms-input-placeholder {
+            color: $grey;
+
+         }
+
+         button {
+            background-color: $pink;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            padding: 7.5px 12.5px 7.5px 12.5px;
+
+            @include md {
+               padding: 16px 15px 16px 15px;
             }
 
-            ::-ms-input-placeholder{
-               color: $grey;
+            img {
+               width: 25px;
 
-            }
-
-            button{
-               background-color: $pink;
-               border: none;
-               border-radius: 5px;
-               margin-left: 10px;
-               padding: 7.5px 12.5px 7.5px 12.5px;
-
-               @include md{
-                  padding: 16px 15px 16px 15px;
-               }
-
-               img{
-                  width: 25px;  
-
-                  @include md{
-                     width: 30px;
-                  }
+               @include md {
+                  width: 30px;
                }
             }
          }
       }
    }
+}

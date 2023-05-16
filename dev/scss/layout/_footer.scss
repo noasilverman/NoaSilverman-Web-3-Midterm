@@ -47,29 +47,33 @@ footer {
 .both {
     grid-area: both;
 }
-.email-signup{
-background-color: grey;
+
+.email-signup {
+    background-color: grey;
     color: white;
-    border: none; 
+    border: none;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
 }
-input:focus{
-    border-color: white;
+
+input:focus {
+    border: 1px solid white;
 }
-input::placeholder{
-    color:white;
+
+input::placeholder {
+    color: white;
 }
+
 input::-webkit-input-placeholder {
-    color:white;
+    color: white;
 }
 
 input::-moz-placeholder {
-    color:white;
+    color: white;
 }
 
 input::-ms-placeholder {
-    color:white;
+    color: white;
 }

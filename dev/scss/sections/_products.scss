@@ -5,25 +5,29 @@
    margin: 10px;
    color: grey;
 }
-.articles-grid{
+
+.articles-grid {
    display: grid;
    justify-content: center;
-  
 
-   @include md{
+
+   @include md {
       grid-template-columns: repeat(2, 320px);
       gap: 2%;
       padding-bottom: 55px;
    }
-   @include lg{
+
+   @include lg {
       grid-template-columns: repeat(3, 320px);
       gap: 2%;
       padding-bottom: 55px;
    }
 }
-.article-image{
+
+.article-image {
    background-color: grey;
 }
+
 .article {
    background-color: rgb(243, 243, 243);
    border-bottom: 1px solid grey;

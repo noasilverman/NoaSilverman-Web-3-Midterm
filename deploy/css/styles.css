@@ -325,6 +325,11 @@ template {
 .large-images {
   width: 100%;
 }
+@media (min-width: 768px) {
+  .large-images {
+    height: 650px;
+  }
+}
 
 .container {
   display: grid;
@@ -354,6 +359,22 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open-Sans", "Sans-Serif";
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 400;
+}
+
 /* =============
     Buttons
 ============= */
@@ -503,7 +524,7 @@ footer {
 }
 
 input:focus {
-  border-color: white;
+  border: 1px solid white;
 }
 
 input::placeholder {
@@ -643,6 +664,21 @@ li.img-3 {
     padding-right: 15px;
   }
 }
+.more-info-grid {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .more-info-grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .dark-teal-md {
+    background-color: rgb(121, 205, 209);
+  }
+}
+
 /* =============
    Hero
 ============= */
@@ -666,8 +702,8 @@ li.img-3 {
 ============= */
 .nav-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 10px;
+  grid-template-columns: 75% 25%;
+  padding: 20px;
   border-bottom: 1px solid grey;
   background-color: rgb(255, 246, 251);
 }
@@ -678,9 +714,8 @@ li.img-3 {
 }
 
 .nav-section-image {
-  width: 50px;
-  height: 50px;
-  padding: 30px;
+  width: 75px;
+  height: 75px;
 }
 
 @media (min-width: 768px) {
@@ -756,6 +791,31 @@ li.img-3 {
   background-color: #F2DFF0;
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .dark-pink-md {
+    background-color: rgb(235, 208, 229);
+  }
+}
+
+.more-info-grid-route {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .more-info-grid-route {
+    grid-template-columns: repeat(2, 49.5%);
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+}
+
+.image-position {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* =============

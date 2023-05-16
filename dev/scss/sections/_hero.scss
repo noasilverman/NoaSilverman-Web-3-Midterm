@@ -2,24 +2,25 @@
    Hero
 ============= */
 
-.Hero{
+.Hero {
 
-.hero-content{
+   .hero-content {
 
-@include md {
-display: grid;
-grid-template-columns: 40% 60%;
-}
-.large-images{
-grid-template-columns: 50% 50%;
-}
+      @include md {
+         display: grid;
+         grid-template-columns: 40% 60%;
+      }
 
-.hero-content-left.container{
+      .large-images {
+         grid-template-columns: 50% 50%;
+      }
+
+      .hero-content-left.container {
 
 
-   @include lg {
-      grid-template-columns: auto auto 16px
+         @include lg {
+            grid-template-columns: auto auto 16px
+         }
+      }
    }
-}
-}
 }

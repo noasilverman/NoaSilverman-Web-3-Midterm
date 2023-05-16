@@ -2,74 +2,91 @@
   Glossier
 ============= */
 
-.glossier{
+.glossier {
 
-    &.content{
-        @include md{
+    &.content {
+        @include md {
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-areas: "glossier-you-perfume price";
         }
- @include xl{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "glossier-you-perfume price";
- }
-}
- }
-.glossier{
-    text-decoration: none;
-    background-color:$blue;
-    color: black;
-  
+
+        @include xl {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "glossier-you-perfume price";
+        }
+    }
 }
 
-.price{
-    display:grid;
+.glossier {
+    text-decoration: none;
+    background-color: $blue;
+    color: black;
+
+}
+
+.price {
+    display: grid;
     grid-area: Price;
     grid-template-columns: 1fr 1fr;
-    background-color:$blue;
+    background-color: $blue;
     color: black;
 }
 
-.words{
-grid-area: flower;
+.words {
+    grid-area: flower;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     right: 18px;
 }
 
-.padding-words{
+.padding-words {
     padding-left: 18px;
     padding-top: 12px;
     padding-bottom: 14px;
     position: relative;
 
-@include md{
-    padding-left: 22px;
-    padding-top: 20px;
-    padding-bottom: 19px;
+    @include md {
+        padding-left: 22px;
+        padding-top: 20px;
+        padding-bottom: 19px;
+    }
+
+    @include lg {
+        padding-left: 18px;
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
 }
 
-@include lg{
-    padding-left: 18px;
-    padding-top: 16px;
-    padding-bottom: 12px;
-}
-}
-
-.padding-arrow{
+.padding-arrow {
     padding-right: 16px;
     padding-top: 33px;
     padding-bottom: 25px;
 
-    @include md{
+    @include md {
         padding-top: 35px;
         padding-bottom: 31px;
         padding-right: 15px;
     }
-    @include lg{ 
+
+    @include lg {}
+}
+
+.more-info-grid {
+    display: grid;
+
+    @include md {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+.dark-teal-md {
+
+    @include md {
+        background-color: rgb(121, 205, 209);
     }
 }

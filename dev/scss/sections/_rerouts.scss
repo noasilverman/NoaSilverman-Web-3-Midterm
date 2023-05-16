@@ -1,89 +1,121 @@
 /* =============
    rerouts
 ============= */
-.nav-section{
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
+.nav-section {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding: 20px;
     border-bottom: 1px solid grey;
     background-color: rgb(255, 246, 251);
 }
-.learn-more-button{
+
+.learn-more-button {
     background-color: $pink;
     padding: 5px;
 
 }
-.nav-section-image{
-    width: 50px;
-     height: 50px; 
-     padding: 30px;
+
+.nav-section-image {
+    width: 75px;
+    height: 75px;
 }
-.divider{
-    &.content{
-        @include md{
+
+.divider {
+    &.content {
+        @include md {
             display: grid;
             grid-template-columns: 50% 50%;
-        grid-template-areas: "makeup-shelf Subscribe";
+            grid-template-areas: "makeup-shelf Subscribe";
         }
-        @include xl{
+
+        @include xl {
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-areas: "makeup-shelf Subscribe";
         }
     }
-    }
-.rerout{
-&.content{
-    @include md{
-        display: grid;
-        grid-template-columns: 50% 50%;
-    grid-template-areas: "makeup-shelf Subscribe";
-    }
-    @include xl{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: "makeup-shelf Subscribe";
+}
+
+.rerout {
+    &.content {
+        @include md {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "makeup-shelf Subscribe";
+        }
+
+        @include xl {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "makeup-shelf Subscribe";
+        }
     }
 }
-}
-.padding{
+
+.padding {
     padding-left: 16px;
     padding-top: 14px;
     padding-bottom: 64px;
     padding-right: 169;
 
-    @include md{
+    @include md {
         padding-left: 21px;
         padding-top: 32px;
         padding-bottom: 68px;
         padding-right: 160px;
     }
-@include lg{
-    padding-left: 17px;
-    padding-top: 25px;
-    padding-bottom: 60px;
-    padding-right: 276px;
-}
+
+    @include lg {
+        padding-left: 17px;
+        padding-top: 25px;
+        padding-bottom: 60px;
+        padding-right: 276px;
+    }
 }
 
-.makeup-shelf{
+.makeup-shelf {
     display: grid;
     grid-area: y;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: text circle;
 }
 
-.text{
+.text {
     grid-area: text;
 }
-.image{
-  grid-area: circle;  
+
+.image {
+    grid-area: circle;
 }
-.button{
+
+.button {
     grid-area: button;
     background-color: $pink;
     color: white;
     text-decoration: none;
 }
 
+.dark-pink-md {
 
+    @include md {
+        background-color: rgb(235, 208, 229);
+    }
+}
+
+.more-info-grid-route {
+    display: grid;
+
+    @include md {
+        grid-template-columns: repeat(2, 49.5%);
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+}
+
+.image-position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

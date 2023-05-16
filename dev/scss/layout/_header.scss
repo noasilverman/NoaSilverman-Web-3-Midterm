@@ -2,82 +2,81 @@
     Header
 ============= */
 
-header{
+header {
 
-    .content{
+    .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding:15px 0px
-
-
+        padding: 15px 0px
     }
 }
 
 
-header{
+header {
     background-color: $pink;
     color: white;
 
-    .content{
+    .content {
 
-        div{
+        div {
             margin: 20px 0 20px 0px;
-            @include md{
-                margin:25px 0 25px 0px;
+
+            @include md {
+                margin: 25px 0 25px 0px;
             }
         }
 
-        img{
+        img {
             width: 40px;
-            padding-right:0.5ren;
-            
-            @include lg{
+            padding-right: 0.5ren;
+
+            @include lg {
                 width: 60px;
                 padding-right: 1ren;
             }
         }
 
-        h1{
+        h1 {
             display: none;
             color: $black;
 
-            @include md{
+            @include md {
                 display: inline-block;
                 font-size: 24px;
             }
 
-            @include lg{
+            @include lg {
                 font-size: 36px;
             }
         }
     }
-        
-         
-        
-    
+
+
+
+
 
 
 
 }
 
-.container{
-    display:grid;
+.container {
+    display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". content .";
 
 }
-.pink-background{
+
+.pink-background {
     background: $pink;
 }
 
-.header-content{
+.header-content {
     grid-area: content;
     margin: 10px;
 
 
-@include md{
-    padding: 15px;
-    text-align: center;
+    @include md {
+        padding: 15px;
+        text-align: center;
+    }
 }
-}
-
